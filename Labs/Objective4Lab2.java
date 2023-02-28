@@ -2,31 +2,35 @@ import java.util.Scanner;
 
 public class Objective4Lab2 {
 	public static void main(String[] args) {
-		java.util.Scanner scanner = new java.util.Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 		
 		int num1 = 0, num2 = 0, num3 = 0;
-		double dub1 = 0.0, dub2 = 0.0, dub3 = 0.0;
-		sumNum = num1 + num2 + num3;
-		sumDub = dub1 + dub2 + dub3;
+        double dub1 = 0.0, dub2 = 0.0, dub3 = 0.0;
 		
 		//prompt user input for all of the above int variables.
-		System.out.print("Please enter the first whole number to add.");
-		int intnum1 = scanner.nextInt();
-		
-		System.out.print("Please enter the second whole number to add.");
-		int num2 = scanner.nextInt();
+		System.out.println("Please enter the first whole number to add.");
+		num1 = input.nextInt();
 
-		System.out.print("Please enter the third whole number to add.");
-		int num3 = scanner.nextInt();		
+		System.out.println("Please enter the second whole number to add.");
+		num2 = input.nextInt();
+
+		System.out.println("Please enter the third whole number to add.");
+		num3 = input.nextInt();
+		
+		int sumNum = num1 + num2 + num3;
+		
 		//prompt user input for above dub variables.
-		System.out.print("Please enter the first decimal number to add.");
-		double dub1 = scanner.nextDouble();
+		System.out.println("Please enter the first decimal number to add.");
+		dub1 = input.nextDouble();
 		
-		System.out.print("Please enter the second decimal number to add.");
-		double dub2 = scanner.nextDouble();
+		System.out.println("Please enter the second decimal number to add.");
+		dub2 = input.nextDouble();
 		
-		System.out.print("Please enter the third decimal number to add.");
-		double dub3 = scanner.nextDouble();
+		System.out.println("Please enter the third decimal number to add.");
+		dub3 = input.nextDouble();
+		
+		double sumDub = dub1 + dub2 + dub3;
+		
 		//print 3 ints and sum.
 		System.out.println("The sum of " + num1 + " + " + num2 + " + " + num3 + " + " + "= " + sumNum);
 		
